@@ -1,9 +1,9 @@
 <?php
 
-$serverName = "192.168.1.68";
-$dBUsername = "ambroiselebs";
-$dBPassword = "pipi";
-$dBName = "ezanime";
+$serverName = "ip";
+$dBUsername = "username";
+$dBPassword = "password";
+$dBName = "db";
 
 $conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
 
