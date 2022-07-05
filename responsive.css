@@ -1,0 +1,154 @@
+:root {
+    --beige: #E9DFB1;
+    --bg-color: #0B2938;
+    --vector-color: #0B2938;
+    --card-color: #469B97;
+}
+
+@media screen and (max-width: 1565px) {
+    .top-nav .search_div .search-bar {
+        border: 7px solid var(--beige);
+        width: 487px;
+        height: 30px;
+        border-radius: 10px;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -5%);
+        background: var(--bg-color);
+    }
+
+    .top-nav .search_div .search-bar .input-search {
+        width: 440px;
+        height: 30px;
+        color: #fff;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+    }
+
+    .top-nav .search_div .search-bar .input-search:focus {
+        outline: none;
+    }
+}
+
+@media screen and (max-width: 1339px) {
+    .top-nav .search_div .search-bar {
+        border: 7px solid var(--beige);
+        width: 377px;
+        height: 30px;
+        border-radius: 10px;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -5%);
+        background: var(--bg-color);
+    }
+
+    .top-nav .search_div .search-bar .input-search {
+        width: 330px;
+        height: 30px;
+        color: #fff;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+    }
+
+    .top-nav .search_div .search-bar .input-search:focus {
+        outline: none;
+    }
+
+    .top-nav .logo-top {
+        width: 320px;
+        height: 130px;
+    }
+
+    .left-nav {
+        background: var(--beige);
+        width: 70px;
+        height: 260px;
+        border-radius: 10px;
+        position: fixed;
+        left: 2%;
+        top: 50%;
+        transform: translate(-2%, -50%);
+    }
+
+    .left-nav .items-lst a {
+        font-size: 40px;
+        cursor: pointer;
+        color: var(--vector-color);
+    }
+
+    .item-div {
+        margin-bottom: 17px;
+    }
+}
+
+@media screen and (max-width: 1235px) {
+    .top-nav .search_div .search-bar {
+        border: 7px solid var(--beige);
+        width: 277px;
+        height: 30px;
+        border-radius: 10px;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -5%);
+        background: var(--bg-color);
+    }
+
+    .top-nav .search_div .search-bar .input-search {
+        width: 230px;
+        height: 30px;
+        color: #fff;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+    }
+
+    .top-nav .search_div .search-bar .input-search:focus {
+        outline: none;
+    }
+
+    .top-nav .logo-top {
+        width: 271px;
+        height: 115.5px;
+    }
+
+    .recent-card {
+        width: 200px;
+        height: 180px;
+        border-radius: 25px;
+    }
+
+    .recent-card img {
+        width: 90px;
+        height: 113px;
+        border-radius: 20px;
+    }
+
+    .recent-card {
+        width: 100px;
+        height: 200px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        margin-right: 6px;
+        margin-left: 10px;
+    }
+
+    .recent-card h3 
+    {
+        font-size: 15px;
+    }
+
+    .recent-anime_lineun {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .top-nav .logo-top {
+        display: none;
+    }
+}

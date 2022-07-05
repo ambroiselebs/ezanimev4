@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --beige: #E9DFB1;
+    --bg-color: #0B2938;
+    --vector-color: #0B2938;
+    --card-color: #469B97;
+    --red: #d62f4d;
+    --whitebar: #dce6f0;
+}
+
+.loader-bg {
+    position: fixed;
+    z-index: 999999;
+    background: var(--bg-color);
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before, .loader:after {
+    content: '';
+    border: 1em solid #E9DFB1;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+@keyframes loader {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+        overflow: hidden;
+    }
+    50%{
+        opacity: 1;
+        overflow: hidden;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+        overflow: hidden;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background: url("assets/bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+    opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border: 1px solid var(--whitebar);
+    border-radius: 5px;
+}
+
+.top-nav .logo-top {
+    width: 471px;
+    height: 205.5px;
+}
+
+.top-nav .search_div .search-bar {
+    border: 7px solid var(--beige);
+    width: 755px;
+    height: 30px;
+    border-radius: 10px;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    padding: 10px;
+    background: var(--bg-color);
+}
+
+.top-nav .search_div .search-bar .input-search {
+    width: 710px;
+    height: 30px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    z-index: 111;
+}
+
+.top-nav .search_div .search-bar .input-search:focus {
+    outline: none;
+}
+
+.top-nav .search_div .search-bar .btn-search {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.left-nav {
+    background: var(--beige);
+    width: 113px;
+    height: 430px;
+    border-radius: 10px;
+    position: fixed;
+    left: 2%;
+    top: 50%;
+    transform: translate(-2%, -50%);
+}
+
+.item-div {
+    margin-bottom: 48px;
+}
+
+.left-nav .items-lst a {
+    font-size: 56px;
+    cursor: pointer;
+    color: var(--vector-color);
+}
+
+.item-div_home {
+    margin-top: 10px;
+}
+
+.recent-anime_lineun {
+    display: flex inline-block;
+    justify-content: flex-start;
+    flex-direction: row;
+    vertical-align: top;
+    width: 70%;
+}
+
+.recent-card {
+    background: var(--card-color);
+    width: 275px;
+    height: 290px;
+    padding-top: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 37px;
+    align-items: baseline;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    justify-content: flex-start;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 20px 78px 88px;
+    transition: .5s;
+    vertical-align: top;
+}
+
+.recent-card:hover {
+    transform: translateY(-10px);
+}
+
+.recent-card img {
+    width: 260px;
+    height: 213px;
+    border-radius: 37px;
+}
+
+.ep-lst {
+    max-width: 80%;
+}
+
+.ep-lst .saison {
+    max-width: 260px;
+    max-height: 500px;
+    display: inline-block;
+    overflow: auto;
+    background: transparent;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+.ep-lst .saison h2{
+    color: #fff;
+    margin: 3px;
+}
+
+.ep-lst .saison button {
+    border: 2px solid var(--beige);
+    padding: 15px 30px;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    margin: 15px;
+    vertical-align: top;
+    transition: .5s;
+    border-radius: 3px;
+}
+
+.ep-lst .saison button:hover {
+    background: var(--beige);
+    color: var(--bg-color);
+}
+
+.anime-title {
+    color: white;
+    text-align: center;
+}
+
+.samecat_h2 {
+    color: var(--whitebar);
+}
+
+.contents-blur {
+    filter: blur(5px);
+    width: 100%;
+    height: 100%;
+}
+.wewatch-hide {
+    display: none;
+    opacity: 0;
+}
+
+.wewatch {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #469B97;
+    display: inline-block;
+    width: 45vh;
+    height: 30vh;
+    border-radius: 5px;
+    text-align: right;
+    z-index: 1111111;
+    color: #E9DFB1;
+}
+
+    .wewatch button {
+        background: transparent;
+        border: none;
+        margin: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .wewatch .center {
+        text-align: center;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
